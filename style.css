@@ -1,0 +1,413 @@
+/* General Reset */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  line-height: 1.6;
+
+  background: #f9f9f9;
+
+  color: #0a192f;
+
+  scroll-behavior: smooth;
+
+}
+
+/* Navbar */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: #0a192f;
+
+  padding: 15px 30px;
+
+}
+
+.logo {
+
+  color: #64ffda;
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+
+}
+
+.nav-links {
+
+  list-style: none;
+
+  display: flex;
+
+}
+
+.nav-links li {
+
+  margin: 0 15px;
+
+}
+
+.nav-links a {
+
+  color: #ccd6f6;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+
+}
+
+.nav-links a:hover {
+
+  color: #64ffda;
+
+}
+
+.menu-toggle {
+
+  display: none;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  color: #64ffda;
+
+}
+
+/* Responsive Navbar */
+
+@media screen and (max-width: 768px) {
+
+  .nav-links {
+
+    display: none;
+
+    flex-direction: column;
+
+    background: #112240;
+
+    position: absolute;
+
+    top: 60px;
+
+    right: 0;
+
+    width: 200px;
+
+  }
+
+  .nav-links.show {
+
+    display: flex;
+
+  }
+
+  .menu-toggle {
+
+    display: block;
+
+  }
+
+}
+
+/* Hero Section */
+
+.hero {
+
+  height: 80vh;
+
+  background: linear-gradient(rgba(10,25,47,0.8), rgba(10,25,47,0.8)),
+
+              url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: #ccd6f6;
+
+  text-align: center;
+
+}
+
+.hero h1 span {
+
+  color: #64ffda;
+
+}
+
+.btn {
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  background: transparent;
+
+  color: #64ffda;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+  padding: 10px 20px;
+
+  border: 2px solid #64ffda;
+
+  border-radius: 30px;
+
+  transition: 0.3s;
+
+}
+
+.btn:hover {
+
+  background: #64ffda;
+
+  color: #0a192f;
+
+}
+
+/* Sections */
+
+.section {
+
+  padding: 60px 20px;
+
+  text-align: center;
+
+  background: #fff;
+
+  margin: 40px auto;
+
+  border-radius: 10px;
+
+  width: 90%;
+
+  max-width: 1000px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+/* About Section */
+
+.about-content {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+.about-content img {
+
+  max-width: 150px;
+
+  border-radius: 50%;
+
+  margin: 10px;
+
+  border: 3px solid #64ffda;
+
+}
+
+.about-content p {
+
+  max-width: 800px;
+
+  margin: 20px auto;
+
+  text-align: center;
+
+  color: #333;
+
+}
+
+/* Skills */
+
+.skills-list {
+
+  list-style: none;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+}
+
+.skills-list li {
+
+  background: #0a192f;
+
+  color: #64ffda;
+
+  margin: 10px;
+
+  padding: 10px 15px;
+
+  border-radius: 5px;
+
+}
+
+/* Projects */
+
+.projects {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+}
+
+.card {
+
+  background: #fefefe;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+
+  width: 250px;
+
+  text-align: center;
+
+  transition: transform 0.3s;
+
+}
+
+.card:hover {
+
+  transform: scale(1.05);
+
+  border: 2px solid #64ffda;
+
+}
+
+/* Contact */
+
+.contact {
+
+  padding: 40px 20px;
+
+  text-align: center;
+
+}
+
+.contact a {
+
+  color: #64ffda;
+
+  text-decoration: none;
+
+}
+
+form {
+
+  max-width: 400px;
+
+  margin: auto;
+
+}
+
+input, textarea {
+
+  width: 100%;
+
+  padding: 10px;
+
+  margin: 10px 0;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+}
+
+button {
+
+  background: #64ffda;
+
+  color: #0a192f;
+
+  border: none;
+
+  padding: 10px;
+
+  width: 100%;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  border-radius: 5px;
+
+}
+
+button:hover {
+
+  background: #52d6b6;
+
+}
+
+/* Footer */
+
+footer {
+
+  text-align: center;
+
+  background: #0a192f;
+
+  color: #ccd6f6;
+
+  padding: 15px;
+
+}
+
+footer a {
+
+  color: #64ffda;
+
+  text-decoration: none;
+
+  margin: 0 10px;
+
+}
+
+footer a:hover {
+
+  text-decoration: underline;
+
+}
